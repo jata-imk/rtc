@@ -212,7 +212,7 @@ img {
   border-style: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   img {
     width: 100%;
   }
@@ -10295,6 +10295,19 @@ h3 {
   color: #026530;
 }
 
+@media (max-width: 768px) {
+  .about__description {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__description {
+    width: 75%;
+  }
+}
+
+
 .container__form {
   width: 65%;
   margin: 0 auto;
@@ -10304,6 +10317,13 @@ h3 {
   box-shadow: 0.5rem 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
   border-radius: 1rem;
   
+}
+
+@media (max-width: 992px) {
+  .container__form {
+    width: 100%;
+    padding: 2rem;
+  }
 }
 
 .floating-label-form-group {
@@ -10381,7 +10401,15 @@ form .row:first-child .floating-label-form-group {
   z-index: 2000;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer; 
+}
+
+@media (max-width: 768px) {
+  .navigation__button {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
 
 .navigation__background {
   height: 3rem;
@@ -10393,6 +10421,13 @@ form .row:first-child .floating-label-form-group {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
+
+@media (max-width: 768px) {
+  .navigation__background {
+    bottom: 1.75rem;
+    right: 1.25rem;
+  }
+}
 
 .navigation__nav {
   visibility: hidden;
@@ -10426,8 +10461,17 @@ form .row:first-child .floating-label-form-group {
   text-decoration: none;
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-  background-size: 220%;
-  transition: all .4s; }
+  background-size: 250%;
+  transition: all .4s; 
+}
+
+@media (max-width: 992px) {
+  .navigation__link:link, .navigation__link:visited {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
+  
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
@@ -10484,7 +10528,6 @@ form .row:first-child .floating-label-form-group {
 }
 
 /* cambios */
-
 .footer__edited {
   display:flex;
   justify-content: space-around;
@@ -10499,8 +10542,23 @@ form .row:first-child .floating-label-form-group {
   align-content: center;
 }
 
+@media (max-width: 992px) {
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .copyright img {
-  max-height: 7rem;
+  height: 7rem;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .copyright img {
+    height: 6rem;
+  }
 }
 
 .copyright p {
@@ -10519,15 +10577,33 @@ form .row:first-child .floating-label-form-group {
   width: 35%;
 }
 
+@media (max-width: 992px) {
+  .copyright .copyright__card:nth-child(1) {
+    margin-bottom: 4rem;
+  }
+}
+
 .copyright .copyright__card--content {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .copyright .copyright__card--content {
+    flex-direction: column;
+  }
 }
 
 .copyright__card--beneficiario {
   padding: 0;
   margin: auto;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .copyright__card--beneficiario {
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -10550,11 +10626,17 @@ form .row:first-child .floating-label-form-group {
     }
 }
 
-.lista{
+.lista {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 75%;
+}
+
+@media (max-width: 992px) {
+  .lista{
+    width: 100%;
+  }
 }
 
 ol.about__description.lista li {
@@ -10947,6 +11029,12 @@ ol.about__description.lista li:not(:last-child) {
   color: black;
 }
 
+@media (max-width: 991px) {
+  .sesion01__enriquece {
+    width: 100%;
+  }
+}
+
 .sesion01__enriquece.sesion03 {
   color: #026530;
 }
@@ -10956,6 +11044,13 @@ ol.about__description.lista li:not(:last-child) {
   grid-template-columns: 135px 1fr;
   column-gap: 3rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 991px) {
+  .sesion01__enriquece--tarjetas {
+    width: 100%;
+    grid-template-columns: 75px 1fr;
+  }
 }
 
 .sesion01__enriquece--tarjetas :first-child {
@@ -11029,8 +11124,30 @@ ol.about__description.lista li:not(:last-child) {
   text-align: center;
 }
 
+@media (max-width: 992px) {
+  .instruccionesSnap4Arduino {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    row-gap: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .instruccionesSnap4Arduino {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+    row-gap: 4rem;
+  }
+}
+
 .instruccionesSnap4Arduino.instruccionesSnap4Arduino--2c {
   grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 992px) {
+  .instruccionesSnap4Arduino.instruccionesSnap4Arduino--2c {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .instruccionesSnap4Arduino__paso {
@@ -11041,6 +11158,18 @@ ol.about__description.lista li:not(:last-child) {
 
 .instruccionesSnap4Arduino__paso.instruccionesSnap4Arduino__paso--span3 {
   grid-column: 2/span 1;
+}
+
+@media (max-width: 992px) {
+  .instruccionesSnap4Arduino__paso.instruccionesSnap4Arduino__paso--span3 {
+    grid-column: 1/span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .instruccionesSnap4Arduino__paso.instruccionesSnap4Arduino__paso--span3 {
+    grid-column: 1/span 1;
+  }
 }
 
 .instruccionesSnap4Arduino__paso--numero {
@@ -11064,6 +11193,12 @@ ol.about__description.lista li:not(:last-child) {
 
 .instruccionesSnap4Arduino__paso--img {
   max-width: 100%;
+}
+
+@media (max-width: 992px) {
+  .instruccionesSnap4Arduino__paso.instruccionesSnap4Arduino__paso--span3 > .instruccionesSnap4Arduino__paso--img {
+    max-width: 50%;
+  }
 }
 
 .instruccionesSnap4Arduino__paso--img.instruccionesSnap4Arduino__paso--mod img{
