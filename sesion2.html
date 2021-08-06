@@ -32,12 +32,16 @@
                     <li class="navigation__item"><a href="anexos__instructivo-plataformas.html" class="navigation__link"><span>02</span>Instructivo de uso de plataformas</a></li>
                     <li class="navigation__item"><a href="anexos__introduccion-programacion-bloques.html" class="navigation__link"><span>03</span>Introducción a la programación con bloques</a></li>
                     <li class="navigation__item"><a href="anexos__contenido-steam.html" class="navigation__link"><span>04</span>Recursos digitales para contenido STEAM</a></li>
+                    <li class="navigation__item"><a href="tableros__afectometro.html" class="navigation__link"><span>05</span>Tableros - Afectometro</a></li>
+                    <li class="navigation__item"><a href="tableros__mapeo-colectivo.html" class="navigation__link"><span>06</span>Tableros - Mapeo Colectivo</a></li>
+                    <li class="navigation__item"><a href="tableros__observacion-colectiva.html" class="navigation__link"><span>07</span>Tableros - Observación Colectiva</a></li>
+                    <li class="navigation__item"><a href="tableros__snap.html" class="navigation__link"><span>08</span>Tableros - Snap</a></li>
                 </ul>
             </nav>
         </div>
 
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top bg-modulo01--nav" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="index.html">Reto Ciudad Sostenible</a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,20 +53,21 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#instrucciones">Ruta</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#mapa">Mapa</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#tablero">Tablero</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#dialoga">Descifra</a></li>
-                        
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sesiones">&rlarr;</a></li>
                     </ul>
                 </div>
-                
             </div>
         </nav>
+
         <!-- Masthead-->
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar" src="assets/img/logo.png" alt="Logo RCS" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0 ">Sesión 2: Mapeo colectivo</h1>
+                <h1 class="masthead-heading text-uppercase mb-0 ">Mapeo colectivo</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -97,7 +102,7 @@
         </section>
 
 
-        <section class="page-section portfolio bg-modulo01" id="mapa">
+        <section class="page-section portfolio bg-snap" id="mapa">
             <div class="container">
                 <!-- Portfolio Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-white mb-0">Mapa</h2>
@@ -109,13 +114,29 @@
                 </div>
                 
                 <div class="contenedor__mapa">
-                    <img class="contenedor__mapa--img" src="assets/img/sesion02/mapa.png" alt="Mapa">
+                    <img class="contenedor__mapa--img" src="assets/img/sesion02/mapa-nuevo.png" alt="Mapa">
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section-->
+        <section class="page-section" id="tablero">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Tablero</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="contenedor_padlet">
+                    <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4"><p style="padding:0;margin:0"><iframe src="https://retociudadsostenible.padlet.org/embed/ancwye8pcia04oij" frameborder="0" allow="camera;microphone;geolocation" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe></p><div style="padding:8px;text-align:right;margin:0;"><a href="https://padlet.com?ref=embed" style="padding:0;margin:0;border:none;display:block;line-height:1;height:16px" target="_blank"><img src="https://padlet.net/embeds/made_with_padlet.png" width="86" height="16" style="padding:0;margin:0;background:none;border:none;display:inline;box-shadow:none" alt="Hecho con Padlet"></a></div></div>
+                </div>
+        </section>
+
         <!-- About Section-->
-        <section class="page-section bg-sesion01 text-white mb-0" id="dialoga">
+        <section class="page-section text-white mb-0 bg-modulo02" id="dialoga">
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary">Descifra</h2>
@@ -157,14 +178,45 @@
             </div>
         </section>
 
+
+        <!-- Navegacion sesiones -->
+        <nav id="sesiones" class="enlace-sesiones">
+            <a class="enlace-sesiones--ant" href="sesion1.html">
+                <span>&lt;</span> 
+                <h5><span>Anterior</span> Sesión 01</h5>
+            </a>
+
+            <a class="enlace-sesiones--sig" href="sesion3.html">
+                <h5><span>Siguiente</span> Sesión 03</h5>
+                <span>&gt;</span> 
+            </a>
+
+            <div class="enlace-sesiones__select">
+                <label for="nav-sesiones">Ó</label>
+
+                <select id="nav-sesiones" name="nav-sesiones" onChange="window.location.href=this.value">
+                    <option value="#" selected disabled >- Seleccionar -</option>
+                    <option value="sesion1.html">Sesión 01</option>
+                    <option value="sesion2.html">Sesión 02</option>
+                    <option value="sesion3.html">Sesión 03</option>
+                    <option value="sesion4.html">Sesión 04</option>
+                    <option value="sesion5.html">Sesión 05</option>
+                    <option value="sesion6.html">Sesión 06</option>
+                    <option value="sesion7.html">Sesión 07</option>
+                    <option value="sesion8.html">Sesión 08</option>
+                    <option value="sesion9.html">Sesión 09</option>
+                </select>
+            </div>
+        </nav>
+
         <!-- Footer-->
-        <footer class="footer text-center bg-modulo01">
+        <footer class="footer text-center">
             <div class="container">
                 <div class="footer__edited">
                     <!-- Footer Social Icons-->
                     <div>
                         <h4 class="text-uppercase mb-4">¡Síguenos en redes sociales!</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/reto.ciudad.sostenible" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
                     </div>
