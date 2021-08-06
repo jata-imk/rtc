@@ -32,12 +32,16 @@
                     <li class="navigation__item"><a href="anexos__instructivo-plataformas.html" class="navigation__link"><span>02</span>Instructivo de uso de plataformas</a></li>
                     <li class="navigation__item"><a href="anexos__introduccion-programacion-bloques.html" class="navigation__link"><span>03</span>Introducción a la programación con bloques</a></li>
                     <li class="navigation__item"><a href="anexos__contenido-steam.html" class="navigation__link"><span>04</span>Recursos digitales para contenido STEAM</a></li>
+                    <li class="navigation__item"><a href="tableros__afectometro.html" class="navigation__link"><span>05</span>Tableros - Afectometro</a></li>
+                    <li class="navigation__item"><a href="tableros__mapeo-colectivo.html" class="navigation__link"><span>06</span>Tableros - Mapeo Colectivo</a></li>
+                    <li class="navigation__item"><a href="tableros__observacion-colectiva.html" class="navigation__link"><span>07</span>Tableros - Observación Colectiva</a></li>
+                    <li class="navigation__item"><a href="tableros__snap.html" class="navigation__link"><span>08</span>Tableros - Snap</a></li>
                 </ul>
             </nav>
         </div>
 
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top bg-modulo02--nav" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="index.html">Reto Ciudad Sostenible</a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,6 +55,7 @@
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#instrucciones">Instrucciones</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#snap">Snap</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#dialoga">Descifra</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#sesiones">&rlarr;</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +66,7 @@
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar" src="assets/img/logo.png" alt="Logo RCT" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Sesión 3: Sentidos y sensores</h1>
+                <h1 class="masthead-heading text-uppercase mb-0">Sentidos y sensores</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -226,7 +231,7 @@
         <section class="page-section bg-snap" id="snap">
             <div class="container">
                 <!-- Contact Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Snap</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Snap!</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -281,6 +286,36 @@
                 </div>
             </div>
         </section>
+
+        <!-- Navegacion sesiones -->
+        <nav id="sesiones" class="enlace-sesiones">
+            <a class="enlace-sesiones--ant" href="sesion2.html">
+                <span>&lt;</span> 
+                <h5><span>Anterior</span> Sesión 02</h5>
+            </a>
+
+            <a class="enlace-sesiones--sig" href="sesion4.html">
+                <h5><span>Siguiente</span> Sesión 04</h5>
+                <span>&gt;</span> 
+            </a>
+
+            <div class="enlace-sesiones__select">
+                <label for="nav-sesiones">Ó</label>
+                
+                <select id="nav-sesiones" name="nav-sesiones" onChange="window.location.href=this.value">
+                    <option value="#" selected disabled >- Seleccionar -</option>
+                    <option value="sesion1.html">Sesión 01</option>
+                    <option value="sesion2.html">Sesión 02</option>
+                    <option value="sesion3.html">Sesión 03</option>
+                    <option value="sesion4.html">Sesión 04</option>
+                    <option value="sesion5.html">Sesión 05</option>
+                    <option value="sesion6.html">Sesión 06</option>
+                    <option value="sesion7.html">Sesión 07</option>
+                    <option value="sesion8.html">Sesión 08</option>
+                    <option value="sesion9.html">Sesión 09</option>
+                </select>
+            </div>
+        </nav>
         
         <!-- Footer-->
         <footer class="footer text-center bg-modulo02--nav">
